@@ -8,10 +8,13 @@ export class CharacterService {
   url="https://rickandmortyapi.com/api/";
   constructor(private httpClient:HttpClient) { }
 
-  GetCharacters(){
-    return this.httpClient.get(this.url+'character');
+  GetCharacterByUrl(sUrl:any){
+    return this.httpClient.get(sUrl);
   }
   GetLocations(){
     return this.httpClient.get(this.url+'location');
+  }
+  GetCharactersLocation(id:any){
+    return this.httpClient.get(this.url+'location/'+id)
   }
 }

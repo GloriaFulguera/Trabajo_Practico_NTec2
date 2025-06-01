@@ -1,7 +1,8 @@
 
-<table class="table">
+<table class="table table-hover table-bordered align-middle">
   <thead>
     <tr>
+      <th></th>
       <th scope="col">ID</th>
       <th scope="col">Nombre</th>
       <th scope="col">Planeta</th>
@@ -10,6 +11,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let x of DataSource.results">
+      <td class="text-center">
+        <a href="/population/{{x.id}}" class="btn btn-sm btn-outline-primary">Ver habitantes</a>
+      </td>
       <td>{{x.id}}</td>
       <td>{{x.name}}</td>
       <td>{{x.type}}</td>

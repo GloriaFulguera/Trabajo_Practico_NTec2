@@ -10,6 +10,7 @@ import { CharacterService } from '../../Service/character.service';
 export class LocationsComponent implements OnInit{
   constructor(private service:CharacterService){}
   DataSource:any;
+  Id:any;
 
   ngOnInit(): void {
     this.service.GetLocations().subscribe(x=>{

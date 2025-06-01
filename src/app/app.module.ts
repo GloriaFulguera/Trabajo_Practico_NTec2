@@ -7,9 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './Components/container/container.component';
-import { LocationsComponent } from './Components/locations/locations.component';
-import { CharactersComponent } from './Components/characters/characters.component';
-import { CharacterDetailsComponent } from './Components/character-details/character-details.component';
+import { LocationsComponent } from './Pages/locations/locations.component';
+import { CharactersComponent } from './Pages/characters/characters.component';
+import { CharacterDetailsComponent } from './Pages/character-details/character-details.component';
 
 @NgModule({
   declarations: [
