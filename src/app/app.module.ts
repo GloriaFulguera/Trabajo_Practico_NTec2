@@ -10,6 +10,7 @@ import { ContainerComponent } from './Components/container/container.component';
 import { LocationsComponent } from './Pages/locations/locations.component';
 import { CharactersComponent } from './Pages/characters/characters.component';
 import { CharacterDetailsComponent } from './Pages/character-details/character-details.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CharacterDetailsComponent } from './Pages/character-details/character-d
     ContainerComponent,
     LocationsComponent,
     CharactersComponent,
-    CharacterDetailsComponent
+    CharacterDetailsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
