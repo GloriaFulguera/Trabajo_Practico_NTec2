@@ -1,1 +1,23 @@
-<p>character-details works!</p>
+<div class="d-flex justify-content-center align-items-center" style="height: 60vh;">
+    <div class="card mb-3" style="max-width: 980px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+        <img src={{DataSource.image}} class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h4 class="card-title">{{DataSource.name}}</h4><br>
+            <p class="card-text"><b>Genero: </b>{{DataSource.gender}}</p>
+            <p class="card-text"><b>Especie: </b>{{DataSource.species}}</p>
+            <p class="card-text"><b>Estado: </b>{{DataSource.status}}</p>
+            <p class="card-text">
+            <b>Episodios:</b>
+            <span *ngFor="let x of DataSource.episode; let last = last">
+                {{ x.split('/').pop() }}<span *ngIf="!last">, </span>
+            </span>
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

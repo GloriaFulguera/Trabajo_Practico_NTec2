@@ -14,6 +14,7 @@ export class CharactersComponent implements OnInit{
   DataSource:any;
   Id:any;
   Population:any[]=[];
+  CharacterUrl:any;
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(x=>{
@@ -33,5 +34,8 @@ export class CharactersComponent implements OnInit{
       })
     }
   }
-
+  SetCharacterUrl(url:any){
+    this.CharacterUrl=url;
+    console.log(url);
+  }
 }

@@ -11,6 +11,9 @@ export class CharacterService {
   GetCharacterByUrl(sUrl:any){
     return this.httpClient.get(sUrl);
   }
+  GetCharacter(id:any){
+    return this.httpClient.get(this.url+'character/'+id)
+  }
   GetLocations(){
     return this.httpClient.get(this.url+'location');
   }
